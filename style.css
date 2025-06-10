@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #3d7244;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color:#5dbe54 ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    
+}
+
+nav ul li{
+    margin: 0 5px;
+
+}
+
+nav ul li a{
+    color: rgb(178, 230, 127);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background-color: rgb(62, 158, 62);
+}
+
+nav .menu i{
+    color: #f0e7c2;
+    cursor: pointer;
+    display: none;
+
+}
+
+main{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-baixo{
+    width: 40%;
+}
+.text-baixo h1{
+    color: #f0e7c2;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.text-baixo h1 b{
+    color: #f0e7c2;
+}
+.text-baixo h2{
+    color: #f0e7c2;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.text-baixo p{
+    color: #f0e7c2;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.midia_sociais a{
+    text-decoration: none;
+}
+.midia_sociais i{
+    font-size: 50px;
+    margin-top: 0 3px;
+    color: #5dbe54;
+    background-color: #0f3b15;
+    border-radius: 5px;
+
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaço entre ícones */
+    align-items: center;
+}
+
+.contatos a {
+    text-decoration: none;
+}
+
+.contatos i {
+    font-size: 50px;
+    color: #5dbe54;
+    background-color: #0f3b15;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+header{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.texto_contato{
+    width: 40%;
+}
+
+.texto_contato h1{
+    color: #f0e7c2;
+    font-size: 3rem;
+
+}
+
+.curso-section{
+    color: #0f3b15;
+}
+
+.container h1{
+    color: #f0e7c2;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: row-reverse;
+}
+
+.perfil img {
+    width: 400px;
+    height: 400px;
+    border-radius: 15%; 
+    object-fit: cover;
+}
+
+.perfil .texto {
+    max-width: 600px;
+}
+
+
+
+
+@media (max-width: 920px){
+    nav.menu i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #954130;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;
+
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+        background: none;
+        color: #3B0014;
+    }
+}
